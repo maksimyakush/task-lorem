@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem Ipsum</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+  <div class="menu">
+    <div class="content">
+      <ul class="u-text-center">
+        <li>
+          <a href="#">Бизнес</a>
+        </li>
+        <li>
+          <a href="#">О нас</a>
+        </li>
+        <li>
+          <a href="#">Цены</a>
+        </li>
+        <li>
+          <a href="#">Оформить заказ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <header>
+    <div class="c-container content">
+      <a href="#">
+        <img src="/assets/images/logo.svg" alt="Logo">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li>
+            <a href="#" class="header__nav-link">Бизнес</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav-link">О нас</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav-link">Цены</a>
+          </li>
+          <li>
+            <a href="#" class="header__nav-link">Оформить заказ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-controller" onclick="document.querySelector('.menu').classList.toggle('show')">
+        <svg width="50" height="50" fill="var(--color-white)">
+          <use xlink:href="/assets/images/icons.svg#menu" />
+        </svg>
+        <svg width="50" height="50" fill="var(--color-white)">
+          <use xlink:href="/assets/images/icons.svg#close" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="welcome">
+      <div class="c-container">
+        <div class="elevator-pitch">
+          <h1 class="h1">
+            <span class="u-text-accent-400">
+              Lorem ipsum
+            </span> dolor sit amet consectetur
+            <span class="u-text-accent-400">
+              adipiscing
+            </span>
+          </h1>
+          <div class="elevator-pitch__content">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+            <ul>
+              <li>Totam rem aperiam eaque ipsa</li>
+              <li>Sit voluptatem accusantium doloremque laudantium</li>
+              <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+          </div>
+          <div class="elevator-pitch__buttons-wrapper">
+            <a href="#" class="c-button" data-variant-covered>Заказать</a>
+            <a href="#" class="c-button" data-variant-outlined>Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class=" c-container">
+        <div>
+          <h2 class="h2 u-text-center">Оформление <span class="u-text-accent-400">
+              заказа
+            </span></h2>
+          <p class="subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы</p>
+        </div>
+        <div class="order-step-list">
+          <div class="order-step" data-content="Lorem ipsum dolorsit amet ">
+            <svg width="55" height="55" fill="var(--color-white)">
+              <use xlink:href="/assets/images/icons.svg#search" />
+            </svg>
+          </div>
+          <div class="circle-list">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="order-step" data-content="Сonsecteturadipiscing elit">
+            <svg width="55" height="55" fill="var(--color-white)">
+              <use xlink:href="/assets/images/icons.svg#percent" />
+            </svg>
+          </div>
+          <div class="circle-list">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="order-step" data-content="Sed do eiusmod tempor">
+            <svg width="55" height="55" fill="var(--color-white)">
+              <use xlink:href="/assets/images/icons.svg#note" />
+            </svg>
+          </div>
+          <div class="circle-list">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="order-step" data-content="Esse cillum dolore eu fugiat">
+            <svg width="55" height="55" fill="var(--color-white)">
+              <use xlink:href="/assets/images/icons.svg#envelope" />
+            </svg>
+          </div>
+          <div class="circle-list">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="order-step" data-content="Excepteur sint occaecat cupidatat non proident">
+            <svg width="55" height="55" fill="var(--color-white)">
+              <use xlink:href="/assets/images/icons.svg#money" />
+            </svg>
+          </div>
+        </div>
+        <form class="form">
+          <div class="form__system">
+            <select name="system" value="">
+              <option value="">Выберите тип системы</option>
+              <option value="windows">Windows</option>
+              <option value="linux">Linux</option>
+              <option value="ios">IOs</option>
+            </select>
+          </div>
+          <div class="form__email">
+            <input type="email" name="email" placeholder="Ваш e-mail">
+          </div>
+          <div>
+            <input type="text" name="name" placeholder="Ваше имя">
+          </div>
+
+          <div class="form__range">
+            <label for="range">Sed ut perspiciatis, unde omnis iste natus</label>
+            <input type="range" id="range" value="90" name="range">
+            <script>
+              const range = document.querySelector('input[type=range]');
+              const rangeRegion = document.querySelector('.form__range');
+              const value = document.createElement('span');
+              rangeRegion.append(value);
+              value.style.position = 'absolute';
+              value.style.right = 0;
+              value.style.top = 0;
+              value.textContent = `${range.value} %`;
+              range.addEventListener('change', (e) => value.textContent = `${e.target.value} %`);
+            </script>
+          </div>
+          <div class="form__file">
+            <label for="file" class="file" tabindex="1">
+              <input id="file" name="file" type="file" />
+              <svg width="20" height="20" fill="var(--color-black)">
+                <use xlink:href="/assets/images/icons.svg#copy" />
+              </svg>
+              Прикрепить файл
+            </label>
+          </div>
+          <div class="form__submit">
+            <button type="submit" class="c-button" data-variant-covered data-full>Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="c-container content">
+      <div class="footer__copyright">
+        <p>© 2018 «LoremIpsum.net» Все права защищены.</p>
+      </div>
+      <div class="footer__list-wrapper">
+        <ul class="footer__list">
+          <li>
+            <svg width="20" height="20">
+              <use xlink:href="/assets/images/icons.svg#qiwi" />
+            </svg>
+            <span>
+              QIWI wallet
+            </span>
+          </li>
+          <li>
+            <svg width="20" height="20">
+              <use xlink:href="/assets/images/icons.svg#yandex" />
+            </svg>
+            <span>
+              Yandex Money
+            </span>
+          </li>
+          <li>
+            <svg width="20" height="20">
+              <use xlink:href="/assets/images/icons.svg#webmoney" />
+            </svg>
+            <span>
+              Webmoney
+            </span>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <a href="mailto">
+            <svg width="20" height="20">
+              <use xlink:href="/assets/images/icons.svg#envelope" />
+            </svg>
+            <span>
+              info@ipsum228.com
+            </span>
+          </a>
+          <a href="#">
+            <svg width="20" height="20">
+              <use xlink:href="/assets/images/icons.svg#vk" />
+            </svg>
+            <span>Мы вконтакте</span>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
